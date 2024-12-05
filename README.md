@@ -5,7 +5,19 @@ This is a project written in SwiftUI and Swift to tackle the iOS challenge for C
 ## **Introduction**
 
 Project UI in its entirety is written in SwiftUI. 
-I decided to use MVVM as architecture. I have a ContentView that shows the Search bar and when you type a movie name, it hits the api and returns the movie found. 
+I decided to use MVVM as architecture. Also, I implemented the api calls using the latest concurrency framework from Apple, async/await. I have a ContentView that shows the Search bar and when you type a movie name, it hits the api and returns the movie found. Once you tap on the movie, I show the details with what was requested and a button on the top right part ot add/remove from favorites.
+
+## **Technologies used**
+- Combnine
+- Async/Await
+- SwiftUI
+- Swift
+- protocol oriented
+- ObservableObject
+- Swift
+- Cache
+- UserDefaults
+- Repository Pattern
 
 ## **Components**
 **MovieViewModel**: this ViewModel is an ObservavbleOvject that is in charge of grabbing the search text and sending it to the API. This ViewModel requires a MovieRepo to be injected.
